@@ -2,10 +2,28 @@
 <html>
     <head>
         <title>QR Code Display</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+            }
+            img {
+                max-width: 100%;
+            }
+            /* Disabling pinch zoom */
+            @media (max-width: 600px) {
+              html, body {
+                touch-action: manipulation;
+              }
+            }
+        </style>
     </head>
-    <body styles="display:flex;align-items:center;justify-content:center">
-        <a align="center" href="https://docs.google.com/forms/d/e/1FAIpQLSd9Ol0-mZWDumeBArTFg4IHrWL7BVW79k_RW0cFW2hIeTpJdg/viewform">
-            <img src="qr.jpg" alt="Your QR Code ">
+    <body>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Ol0-mZWDumeBArTFg4IHrWL7BVW79k_RW0cFW2hIeTpJdg/viewform">
+            <img src="qr.jpg" alt="Your QR Code">
         </a>
     </body>
 </html>
